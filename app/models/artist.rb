@@ -1,6 +1,9 @@
 class Artist < ApplicationRecord
   belongs_to :genre
   has_many :songs
+  validates :name, presence: true, length: { minimum: 2 }, uniqueness: true
+  validates :genre_id, presence: true
+  validates :genre, presence: true
 end
 
 # == Schema Information
