@@ -1,8 +1,8 @@
 class Song < ApplicationRecord
   belongs_to :artist
 
-  validates :name, :artist_id, :artist, presence: true
-  validates_uniquenss_of :name, scope: :artist_id
+  # validates :name, :artist_id, :artist, presence: true
+  # validates_uniquenss_of :name, scope: :artist_id
 
 end
 
