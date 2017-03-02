@@ -1,6 +1,10 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # TODO: Set default url for action mailer in production
+
+  # config.action_mailer.default_url_options = { host: 'actual host or domain' }
+
   # Code is not reloaded between requests.
   config.cache_classes = true
 
